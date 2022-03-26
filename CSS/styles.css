@@ -1,34 +1,28 @@
-
-
 /* ---ПРИМЕР1--- */
 
 .main-nav {
-    display: flex;
-    /* центрирование по вертикали: */
-    align-items: center;
-    justify-content: center;
-
+  display: flex;
+  /* центрирование по вертикали: */
+  align-items: center;
+  justify-content: center;
 }
 
-.site-nav  {
-display: flex;
-list-style: none;
-padding: 0;
-margin: 0;
-} 
+.site-nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 .item {
-    
-    outline: 3px solid tomato;
-    padding: 0;
-    margin: 0;
-  
+  outline: 3px solid tomato;
+  padding: 0;
+  margin: 0;
 }
 
 .button.secondary {
-    display: block;
-    background-color: tomato; 
- 
+  display: block;
+  background-color: tomato;
 }
 
 /* ----Вариант1:---- */
@@ -43,87 +37,81 @@ margin: 0;
     margin-right: 40px;
 } */
 
-
 /* ---Вариант3:---- */
 
 .site-nav .item + .item {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 .site-nav-header .item {
-    background-color: tomato;
-    list-style: none;
+  background-color: tomato;
+  list-style: none;
 }
 
- .site-nav-header .item + .item {
-   margin-left: 40px;
+.site-nav-header .item + .item {
+  margin-left: 40px;
 }
 
 .site-nav-header {
-    display: flex;
-    padding: 0;
-    margin-top: 0px;
-    margin-bottom: 0;
-    /* сдвизается максимально вправо: */
-    margin-left: auto;
-    list-style: none;
-
+  display: flex;
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 0;
+  /* сдвизается максимально вправо: */
+  margin-left: auto;
+  list-style: none;
 }
 
 .site-nav-header .link {
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.site-nav-header .link:hover, 
+.site-nav-header .link:hover,
 .site-nav-header .link:focus {
-    
-color:teal;
-background-color: blueviolet;
+  color: teal;
+  background-color: blueviolet;
 }
 
 /* ----ПРИМЕР1 END---- */
 
 /* ----ПРИМЕР2 ---- */
 .container {
-   padding-bottom: 50px;
-
+  padding-bottom: 50px;
 }
 
 .future-list {
-    
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-   padding: 0;
-   background-color: teal;
-    display: flex;
-    margin: 0;
-    /* перенос на след строку: */
-    flex-wrap: wrap;
-    list-style: none;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 0;
+  background-color: teal;
+  display: flex;
+  margin: 0;
+  /* перенос на след строку: */
+  flex-wrap: wrap;
+  list-style: none;
 
-    /* равные расстояние между блоками: */
-    /* justify-content: space-between; */
-} 
+  /* равные расстояние между блоками: */
+  /* justify-content: space-between; */
+}
 
 .future-list .item {
-    width: 380px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    outline: none;
-    background-color: tomato;
+  width: 380px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  outline: none;
+  background-color: tomato;
 }
 
 .future-list .item:nth-child(3n) {
-    margin-right: 0;
+  margin-right: 0;
 }
 
-.future-list .item:nth-last-child(-n+3) {
-    margin-bottom: 0;
+.future-list .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
-
 
 /* Ко всем кромк 3-го элемента: */
 
@@ -137,152 +125,853 @@ background-color: blueviolet;
 /* ----ПРИМЕР3 ---- */
 
 .future-list-second {
-    
-    width: 1400px;
-    margin-top: 100px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding: 0;
-    background-color: teal;
-    display: flex;
-    
-    /* перенос на след строку: */
-    flex-wrap: wrap;
-    list-style: none;
+  width: 1400px;
+  margin-top: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 0;
+  background-color: teal;
+  display: flex;
+
+  /* перенос на след строку: */
+  flex-wrap: wrap;
+  list-style: none;
 }
 
 /* calc ((100% родителя - сумма марджинов-последний)/кол-во элементов в строке)  */
 
-
 .future-list-second .item {
-
-    width: calc((100% - 60px)/3);
-    margin-right: 30px;
-    /* width: calc((100%-60px)/3); */
-    /* margin-right: 30px; */
-    /* display: block; */
-    /* аналогично с функцией calc: */
-    /* width: 33.3333%; */
-    /* width: 380px; */
-    /* margin-right: 30px; */
-    /* margin-bottom: 30px; */
-    outline: none;
-    background-color: tomato; 
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  /* width: calc((100%-60px)/3); */
+  /* margin-right: 30px; */
+  /* display: block; */
+  /* аналогично с функцией calc: */
+  /* width: 33.3333%; */
+  /* width: 380px; */
+  /* margin-right: 30px; */
+  /* margin-bottom: 30px; */
+  outline: none;
+  background-color: tomato;
 }
 
+/* ----у все третих элементов :---- */
 
-  /* ----у все третих элементов :---- */
-
-    .future-list-second .item:nth-child(3n) {
-        margin-right: 0px;
-    }
+.future-list-second .item:nth-child(3n) {
+  margin-right: 0px;
+}
 
 /* ----всем кроме последних 3-х :---- */
 
-  .future-list-second .item:not(:nth-last-child(-n+3)) {
-        margin-bottom: 30px;
-    }
+.future-list-second .item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
 
+/* ----ПРИМЕР3 END---- */
 
-    /* ----ПРИМЕР3 END---- */
-
-        /* ----ПРИМЕР4---- */
-
-
+/* ----ПРИМЕР4---- */
 
 /* --Эта техника идеально работает когда нет фона:-- */
 
-        .future-list-three {
-    
-            width: 1230px;
-            margin: -15px;
-            padding-left: 15px;
-            padding-right: 15px;
-            padding: 0;
-            /* background-color: teal; */
-            display: flex;
-            
-            /* перенос на след строку: */
-            flex-wrap: wrap;
-            list-style: none;
-        }
-        
-        /* calc ((100% родителя - сумма марджинов-последний)/кол-во элементов в строке)  */
-        
-        
-        .future-list-three .item {
-        
-            /* width: calc((100% - 60px)/3); */
-            width: 380px;
-            margin: 15px;
-            /* width: calc((100%-60px)/3); */
-            /* margin-right: 30px; */
-            /* display: block; */
-            /* аналогично с функцией calc: */
-            /* width: 33.3333%; */
-            /* width: 380px; */
-            /* margin-right: 30px; */
-            /* margin-bottom: 30px; */
-            outline: none;
-            background-color: tomato; 
-        }
-        
-               /* ----ПРИМЕР4 END---- */
+.future-list-three {
+  width: 1230px;
+  margin: -15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 0;
+  /* background-color: teal; */
+  display: flex;
 
-                /* ----ПРИМЕР5---- */
+  /* перенос на след строку: */
+  flex-wrap: wrap;
+  list-style: none;
+}
 
-            .future-list-fore {
-                width: 1550px;
-                display: flex;
-                flex-wrap: wrap;
-                list-style: none;
-                margin: -40px -75px;
-                outline: 2px solid tomato;
-            }
+/* calc ((100% родителя - сумма марджинов-последний)/кол-во элементов в строке)  */
 
-            .future-list-fore .item {
-                display: flex;
-                    width: 625px;
-                    margin: 40px 75px;
-                    background-color: tomato;
-                }
+.future-list-three .item {
+  /* width: calc((100% - 60px)/3); */
+  width: 380px;
+  margin: 15px;
+  /* width: calc((100%-60px)/3); */
+  /* margin-right: 30px; */
+  /* display: block; */
+  /* аналогично с функцией calc: */
+  /* width: 33.3333%; */
+  /* width: 380px; */
+  /* margin-right: 30px; */
+  /* margin-bottom: 30px; */
+  outline: none;
+  background-color: tomato;
+}
 
-                .future-list-fore > .item:nth-child(2n) {
-                    /* меняется местами картинка и текст в каждой 2-й лишке: */
-                    flex-direction: row-reverse;
-                }
+/* ----ПРИМЕР4 END---- */
 
+/* ----ПРИМЕР5---- */
 
-                /* добавляется к нечетному контейнеру текстов марджин левый 30пикс  */
-                .future-list-fore > .item:nth-child(2n+1) .content {
-                    margin-left: 30px;
-                }
+.future-list-fore {
+  width: 1550px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: -40px -75px;
+  outline: 2px solid tomato;
+}
 
-                /* добавляется к 
+.future-list-fore .item {
+  display: flex;
+  width: 625px;
+  margin: 40px 75px;
+  background-color: tomato;
+}
+
+.future-list-fore > .item:nth-child(2n) {
+  /* меняется местами картинка и текст в каждой 2-й лишке: */
+  flex-direction: row-reverse;
+}
+
+/* добавляется к нечетному контейнеру текстов марджин левый 30пикс  */
+.future-list-fore > .item:nth-child(2n + 1) .content {
+  margin-left: 30px;
+}
+
+/* добавляется к 
                 четному контейнеру текстов марджин правый 30пикс  */
-                .future-list-fore > .item:nth-child(2n) .content {
-                    margin-right: 30px;
-                }
+.future-list-fore > .item:nth-child(2n) .content {
+  margin-right: 30px;
+}
 
-                /* ---ПРИМЕР6--- */
+/* ---ПРИМЕР6--- */
 
-                .title, .text {
-                    text-align: center;
-                    padding-bottom: 100px;
-                }
+.title,
+.text {
+  text-align: center;
+  padding-bottom: 100px;
+}
 
-                .future-list-five {
-                    list-style: none;
-                    display: flex;
-                    flex-wrap: wrap;
-                    width: 1200px;
-                    margin: -30px -45px;
-                    margin-left: auto;
-                    margin-right: auto;
-                    outline: 2px solid tomato;
-                }
+.future-list-five {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: -30px -45px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
 
-                .future-list-five .item {
-                    margin: 30px 45px;
-                    outline: none;
-                }
+.future-list-five .item {
+  margin: 30px 45px;
+  outline: none;
+}
+
+/* ====ФЛЕКС-ЭЛЕМЕНТЫ===== */
+
+.wrap {
+  display: flex;
+  /* Направление главной оси, row-слева на право!: */
+  flex-direction: column;
+  /* Направление главной оси, row-revers-справа на плево!: */
+  /* flex-direction: row-reverse; */
+  /* Направление главной оси, column-сверху вниз; column-revers-снизу вверх!: */
+  /* flex-direction: column; */
+  /* элементы стоят вначале главной оси: */
+  /* justify-content: flex-start; */
+  /* элементы стоят в конце главной оси: */
+  /* justify-content: flex-end; */
+  /* элементы c равными расстояними между собой: */
+  /* justify-content: space-between; */
+  /* элементы c равными расстояними между собой и половинками по бокам: */
+  /* justify-content: space-around; */
+  /* элементы c равными расстояними между собой и целыми по бокам: */
+  /* justify-content: space-evenly; */
+  /* растягивание элементов по вертикали: */
+  /* align-items: stretch; */
+  /* замена главной на вспомогательую ось: */
+  /* flex-direction: column; */
+  /* Выравниманивание по главной оси: */
+  /* justify-content: flex-start; */
+  /* Выравниманивание по вспомогательной оси: */
+  /* align-items: center; */
+  /* Пеернос элементов на следуюющую строку: */
+  flex-wrap: wrap;
+  /* строки по ширине каждого дива сжимаются */
+  /* align-content: flex-start; */
+  /* flex-grow: 1; */
+
+  width: 700px;
+  height: 450px;
+
+  margin: 0 auto;
+  margin-top: 100px;
+  outline: 1px solid tomato;
+}
+
+.box {
+  /* растягиваются все элементы поровну коэффициент сжатия*/
+  /* не сжимется */
+  /* flex-shrink: 0; */
+  /* растягиваются все элементы поровну коэффициент роста*/
+  /* flex-grow: 1; */
+  /* Размер элемента на главной оси */
+
+  flex-basis: 100px;
+  width: 50px;
+  /* height: 100px; */
+  color: azure;
+  font-size: 40px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  border: 1px solid black;
+}
+
+.first-box {
+  /* для флекс-элементов может применяться как вертикальные так и горизонтальные марджины */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  /* Выравнивание по вспомогательной оси, сдвиг в самый низ-конец */
+  /* align-self: flex-end; */
+
+  /* порядок флекс элементов на главной оси */
+  /* order: 1; */
+  /* сжимается в два раза больше чем все остальные */
+  /* flex-shrink: 2; */
+  /* растягивается в два раза больше чем остальные элементы */
+
+  background-color: blue;
+}
+.second-box {
+  /* Выравнивание по вспомогательной оси, сдвиг в центр*/
+  /* align-self: center; */
+  /* order: 2; */
+  /* растягивается га весь оставшийся экран: */
+  /* flex-grow: 1;  */
+  background-color: tomato;
+}
+
+.third-box {
+  /* Выравнивание по вспомогательной оси, сдвиг в начало*/
+  /* align-self: flex-start; */
+  /* order: -1; */
+  background-color: teal;
+}
+
+.fourth-box {
+  /* Выравнивание по вспомогательной оси, растягивается, но надо height отключить*/
+  /* align-self: stretch; */
+  /* order: 3; */
+  background-color: palevioletred;
+}
+
+.wrap-second {
+  display: flex;
+  flex-direction: row;
+  /* Расположение по главной оси */
+  justify-content: space-between;
+  /* Расположение по главной оси */
+  align-items: center;
+  /* Выравнивает элементы по базовой линии (нижняя линия по шрифту)   */
+  /* align-items: baseline; */
+
+  width: 700px;
+  height: 450px;
+
+  margin: 0 auto;
+  margin-top: 100px;
+  outline: 1px solid tomato;
+}
+
+.bx {
+  width: 100px;
+  height: 100px;
+
+  color: red;
+  font-size: 40px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  border: 1px solid black;
+}
+
+/* ====ФЛЕКС-ЭЛЕМЕНТЫ END===== */
+
+.div {
+  width: 100px;
+  height: 100px;
+  outline: 1px solid tomato;
+  /* применяеются только горизонтальные марджины, вертикальные не работают: */
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ---BOX-SIZING:BORDER-BOX !!!---  */
+.text-div {
+  width: 200px;
+  height: 200px;
+  border: 10px solid green;
+  padding: 10px;
+  /* Размер блока 200*200 с учетом всех отступов и т.д. */
+  box-sizing: border-box;
+}
+/*  *-Применяется ко всем элементам */
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.tit {
+  margin-bottom: 20px;
+}
+
+/* Для секций обязательно применяем padding, для внутренний элементов margin */
+.about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: tomato;
+}
+
+.sevices {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: teal;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* =====ПСЕВДО_КЛАССЫ !!===== */
+
+/* Добавляются свойства первому элементу */
+.galary-item:first-child {
+  border: 1px solid black;
+}
+
+/* Добавляются свойства последнему элементу */
+.galary-item:last-child {
+  border: 1px solid black;
+}
+
+/* Добавляются свойства третьему элементу */
+
+.galary-item:nth-child(3) {
+  border: 1px solid black;
+}
+
+/* an+b
+a-произвольное число
+b-произвольное число
+n-интеируемы счетчик который начинается с нуля и увеличивается на 1 (еденицу) */
+
+/* Все нечетные
+2n+1 - odd -можно еще так писать
+2*0+1=1
+2*1+1=3 */
+.galary-item:nth-child(2n + 1) {
+  border: 1px solid black;
+  background-color: tomato;
+}
+
+/* Все четные 
+2n-even -можно еще так писать
+2*0=0
+2*1=2
+2*2=4*/
+.galary-item:nth-child(2n) {
+  border: 1px solid black;
+  background-color: teal;
+}
+
+/* Всем кроме последнего */
+.galary-item:not(:last-child) {
+  border: 1px solid black;
+  background-color: teal;
+  margin-bottom: 20px;
+}
+
+/* 2-й и более элемент с конца 
+n+2 
+0+2=2
+1+2=3
+2+2=4 */
+
+.galary-item:nth-last-child(n + 2) {
+  border: 1px solid black;
+  background-color: teal;
+  margin-bottom: 20px;
+}
+
+/* Всем кроме двух последних
+Выберутся кроме второго и первого элемента с конца
+-n+2
+-0+2=2
+-1+2=1
+-2+2=0
+ */
+.galary-item:not(:nth-last-child(-n + 2)) {
+  border: 1px solid black;
+  background-color: purple;
+  margin-bottom: 20px;
+}
+
+/* когда необходимо покрасить 2-ю ссылку в лишке в белый цвет
+ надо выбирать  лишку .galary-item и внутри не класс ссылки  {
+color: aliceblue;  */
+
+.galary-item:nth-child(2) .galary-link {
+  color: aliceblue;
+}
+
+/* ===ФОНЫ=== */
+
+.background {
+  width: 900px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 10px dashed rgba(255, 0, 0, 0.5);
+  color: #ffffff;
+  /* Затемнение осуществляется через linear-gradient */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://picsum.photos/id/237/200/300");
+  background-repeat: no-repeat;
+  background-position: left center;
+  /* растягивается доо ближайшей границы */
+  background-size: cover;
+  /* растягивается на весь блок */
+  /* background-size: auto auto; */
+  /* content-box-по уровню контента, padding-box- по уровню падингов, border-box -по уровню границы бордера   */
+  background-origin: content-box;
+  /* Не вылазит за границы падинга, обрезает: */
+  background-clip: content-box;
+}
+.sky {
+  height: 800px;
+  background-image: url(../img/img1.jpg), url(../img/img2-2.jpg),
+    url(../img/img3.jpg), url(../img/img4.jpg), url(../img/hero-bg1.png);
+  background-repeat: no-repeat;
+  background-position: left top, right top, left bottom, right bottom, left top;
+  background-size: auto, auto, auto, auto, cover;
+}
+
+/* ===ФОНЫ END=== */
+
+/* ====ГРАДИЕНТЫ==== */
+
+.conteiner-a {
+  width: 600px;
+  margin: 0 auto;
+  outline: 1px solid black;
+}
+
+.linear-gradient-block,
+.radial-gradient-block {
+  height: 200px;
+}
+
+.linear-gradient-block {
+  /* плавный переход */
+  background-image: linear-gradient(0deg, yellow 20%, blue 100%);
+  /* резкий переход */
+  /* background-image: linear-gradient(0deg, yellow 0% 20%, blue 20% 100%); */
+  margin-bottom: 20px;
+}
+
+.radial-gradient-block {
+  position: relative;
+  /* Плавный переход */
+  background-image: radial-gradient(ellipse at left top, yellow, blue);
+  /* Резких переход */
+  background-image: radial-gradient(
+    circle at center,
+    yellow 0% 20%,
+    tomato 20% 30%,
+    blue 30% 100%
+  );
+}
+
+/* ====ПСЕВДОКЛАССЫ before и after==== */
+
+.conteiner-b {
+  width: 600px;
+  margin: 0 auto;
+  outline: 1px solid #000;
+  padding: 10px;
+}
+
+.title-b {
+  font-family: sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title-b::before {
+  content: "1. ";
+}
+
+.title-b::after {
+  display: block;
+  width: 200px;
+  height: 4px;
+  background-color: tomato;
+  content: "";
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+/* ====ПСЕВДОКЛАССЫ before и after END==== */
+
+/* ====ТЕНИ==== */
+
+.wrapper-a {
+  width: 700px;
+  margin: 0 auto;
+  outline: 1px solid #000;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  /* Тень: по x, по y, размытие, толщина тени. Можно использовать через запятую несколько теней, INSET-внутренняя тень */
+  box-shadow: 10px 10px 0px 0px tomato, 20px 20px 0px 0px teal,
+    inset 0 0 30px 0px tomato;
+}
+
+.text-a {
+  font-family: sans-serif;
+  font-size: 22px;
+  text-align: center;
+  color: #000;
+  box-shadow: 0 0 10px 0 tomato;
+  text-shadow: 1px 2px 2px tomato;
+}
+
+/* --Невидимый заголовок-- */
+
+.vizually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+/* --Невидимый заголовок END-- */
+
+/* ---Иконки соц-сетей----- */
+
+.social-list {
+  display: flex;
+  width: 1200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  justify-content: center;
+
+  background-color: teal;
+}
+
+.social-list_item {
+  margin-left: 50px;
+}
+
+.social-list_item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.social-list_icon {
+  width: 32px;
+  height: 32px;
+  fill: red;
+}
+
+.social-list_item-link:hover .social-list_icon {
+  fill: teal;
+}
+
+.aaa {
+  color: red;
+}
+.aaa:hover {
+  color: blue;
+}
+
+/* .social-list_item-link:hover .social_list-icon {
+    fill: teal;
+} */
+/*  Иконки через background-image: */
+
+/* 
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-list_item_link_facebook {
+ 
+    background-image: url('../img/facebook.svg');
+}
+
+.social-list_item_link_twitter {
+ 
+    background-image: url('../img/twitter.svg');
+}
+
+.social-list_item_link_linkedin {
+ 
+    background-image: url('../img/linkedin.svg');
+} */
+
+/* ====ПОЗИЦТОНИРОВАНИЕ==== */
+
+
+/* position: absolute;
+bottom: 50%;
+left: 50%;
+transform: translate(-50%, 50%); */
+
+.wrapper-three {
+   
+  width: 900px;
+  margin: 20px auto;
+  outline: 1px solid tomato;
+}
+.container-three {
+    position: relative;
+  width: 700px;
+  margin: 0 auto;
+  outline: 1px solid black;
+}
+
+.red {
+  width: 140px;
+  height: 140px;
+  background-color: red;
+}
+
+.blue {
+  /* Передвигается визуальная часть элемента, но сам элемент остается на том же месте */
+  /* position: relative;
+        left: 20px;
+        top: 20px; */
+        /* Элемент вынимается изз потока, последующий становится на его местоы */
+  /* Этот элемент ищет ближайшего предка с position: relative (отличный от статик)
+  и относительно него поиционируется позиционируется */
+        position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  /* один из вариантов центрирования элементов при знании размера самого элемента  */
+  /* margin-left: -50px;
+  margin-top: -50px; */
+  /* сдвигается на 50% от ширины самого элемента , вверх и вправо отрицательные значения, вниз и влево положительные значения */
+/* transform: translate(-50%, -50%); */
+
+bottom: 50%;
+left: 50%;
+transform: translate(-50%, 50%);
+
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+.yellow {
+  /* Передвигается визуальная часть элемента, но сам элемент остается на том же месте */
+  /* position: relative;
+        left: 300px;
+        top: -100px; */
+  width: 80px;
+  height: 80px;
+  background-color: yellow;
+}
+
+
+
+
+.wrapper-foore {
+   
+    width: 900px;
+    margin: 20px auto;
+    outline: 1px solid tomato;
+  }
+  .container-foore {
+    background-color: yellowgreen;
+      /* position: relative; */
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+    outline: 1px solid black;
+  }
+  
+  .red-two {
+    /* Порядок размещения слоя, чем больше индекс, тем первее он будет */
+    /* z-index: 2; */
+      /* position: absolute; */
+    width: 140px;
+    height: 140px;
+    background-color: red;
+  }
+  
+  .blue-two {
+    
+    /* position: absolute; */
+    /* z-index: 1; */
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 0.5);
+  }
+  
+  .yellow-two {
+   /* position: fixed позиционируется всегда от вьюпорта */
+ position: fixed;
+ top: 0;
+left: 0;
+    width: 1000px;
+    /* для position: fixed;  z-index: 100;-как можно больше чем у всех остальных что-бы точно перекрыло
+    height: 100px;*/
+    z-index: 100;
+    height: 100px;
+    background-color: yellow;
+  }
+  
+/* ====ПОЗИЦТОНИРОВАНИЕ END ==== */
+
+  /* TRANSFORM  */
+
+
+  .wrapper-five {
+    width: 700px;
+    margin: 0 auto;
+    outline: 1px solid tomato;
+    perspective: 600px;
+
+  }
+
+  .drop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  .translate-box {
+    /* смещение по х и y (знаки обратные), но в потоке он остался там-же  */
+    transform: translate(10px, 10px);
+    background-color: teal;
+  }
+
+  .rotate-box {
+     /* смещение вокруг оси Y, но в потоке он остался там-же  */
+    transform: rotateY(60deg);
+    background-color: blue;
+  }
+
+ .scale-box {
+   transform: scale(1);
+   /* Плавное увеличение */
+transition: transform 250ms linear;
+  background-color: palevioletred;
+ }
+
+    /* Плавное увеличение пропорционально*/
+/* .scale-box:hover {
+  transform: scale(1.2);
+} */
+
+/* Плавное увеличение с изменением по х и по y*/
+.scale-box:hover {
+  transform: scaleX(1.2) scaleY(0.9);
+}
+
+
+ .skew-box {
+   /* искожение вокруг оси х и y */
+   transform: skew(30deg, 0deg);
+  background-color: red;
+ }
+
+
+ .wrapper-six {
+  width: 700px;
+  margin: 0 auto;
+  outline: 1px solid tomato;
+  perspective: 600px;
+
+}
+
+
+.btn {
+  display: block;
+  width: 120px;
+  height: 90px;
+  background-color: blue;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 0 auto;
+
+  /* Анимация детальная*/
+  /* transition-property: transform ;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(.04,1.61,.96,-0.8);
+  transition-delay: 0; */
+
+ /* Анимация в одном cоставном свойстве trasition*/
+ /* вариант 1 */
+ /* transition: transform 1000ms cubic-bezier(.04,1.61,.96,-0.8) 0ms; */
+/* вариант 2 */
+/* transition: transform 1000ms linear, background-color 1000ms ease; */
+}
+/* Вариант3 перенос все в hover */
+
+
+.btn:hover,
+.btn:focus {
+  background-color: green;
+  transform: rotate(360deg);
+  /* Вариант3 */
+  transition: transform 1000ms linear, background-color 1000ms ease;
+}
